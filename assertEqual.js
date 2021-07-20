@@ -1,11 +1,9 @@
 const assertEqual = function(actual, expected) {
-  let confused = String.fromCodePoint(0x1F614);
-  let happy = String.fromCodePoint(0x1F600);
   let final = "";
   if (actual === expected) {
-    final = console.log(happy + happy + happy + " " + actual + " === " + expected);
+    final = console.log(`😀😀😀 ${actual} === ${expected}`);
   } else {
-    final = console.log(confused + confused + confused + " " + actual + " !== " + expected);
+    final = console.log(`😔😔😔 ${actual} !== ${expected}`);
   }
   return final;
 };
