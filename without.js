@@ -19,15 +19,27 @@ const eqArrays = function(array1, array2) {
     }
   }
   return true;
-}
+};
 
 const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log(`😀😀😀 ${array1} === ${array2}`);
   } else {
-  console.log(console.log(`😔😔😔 ${array1} !== ${array2}`));
+    console.log(console.log(`😔😔😔 ${array1} !== ${array2}`));
   }
 };
 
 
-//Implement assertArraysEqual which will take in two arrays and console.log an appropriate message to the console.
+const without = function(source, itemsToRemove) {
+  let newSource = [];
+  for (let i = 0; i < source.length; i++) {
+    if (!itemsToRemove.includes(source[i])) {
+      newSource.push(source[i]);
+    }
+  }
+  return newSource;
+};
+
+const words = ["hello", "world", "lighthouse"];
+without(words, ["lighthouse"]);
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
