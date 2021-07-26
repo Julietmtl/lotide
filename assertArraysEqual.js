@@ -25,7 +25,7 @@ const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log(`😀😀😀 ${array1} === ${array2}`);
   } else {
-  console.log(console.log(`😔😔😔 ${array1} !== ${array2}`));
+    console.log(`😔😔😔 ${array1} !== ${array2}`);
   }
 };
 
