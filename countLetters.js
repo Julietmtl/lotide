@@ -22,6 +22,8 @@ const countLetters = function(word) {
   return result;
 };
 
-console.log(countLetters("lighthouse in the house"));
+module.exports = countLetters;
 
-assertEqual(countLetters("lighthouse in the house")['i'], 2);
+// console.log(countLetters("lighthouse in the house"));
+
+// assertEqual(countLetters("lighthouse in the house")['i'], 2);

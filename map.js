@@ -33,4 +33,6 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
+//assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
+
+module.exports = map;
